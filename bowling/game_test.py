@@ -7,11 +7,11 @@ class GameTest(unittest.TestCase):
     def setUp(self):
         self.game = Game()
 
-    def test_ball1_0_ball2_0_scores_0(self):
+    def test_frame_0_0_scores_0(self):
         self.roll_frame(0, 0)
         self.assertGameScoreIs(0)
 
-    def test_ball1_1_ball2_0_scores_1(self):
+    def test_frame_1_0_scores_1(self):
         self.roll_frame(1, 0)
         self.assertGameScoreIs(1)
 
